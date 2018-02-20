@@ -14,6 +14,7 @@ function loadDoc() {
       document.getElementById('title').innerHTML = response.name;
       document.getElementById('skin').innerHTML = response.skin_color;
       document.getElementById('btn').value = response.films[0];
+      document.getElementById('films').innerHTML = '';
       numCharacter++;
       if (numCharacter == 8) {
         console.log('clean interval');
@@ -43,23 +44,11 @@ function loadFilms(url) {
   xhttp.send();
 }
 
-//loadDoc(3);
+
 function characters() {
   console.log('funcion characters');
-  interval = setInterval(loadDoc, 2000);
+  interval = setInterval(loadDoc, 30000);
 
 }
-
+loadDoc();
 characters();
-
-/*var myVar;
-
-function myFunction() {
-  myVar = setInterval(alertFunc, 3000);
-}
-
-function alertFunc() {
-  alert("Hello!");
-}
-
-myFunction();*/
