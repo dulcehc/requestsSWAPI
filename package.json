@@ -1,0 +1,32 @@
+{
+  "name": "SWAPIReact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Dulce Hernández Cruz",
+  "license": "MIT",
+  "homepage": "https://github.com/dulcehc/requestsSWAPI",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "^2.0.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
