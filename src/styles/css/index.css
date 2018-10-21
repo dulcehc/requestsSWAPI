@@ -2,4 +2,12 @@
   font-size: 20px;
 }
 
+.Detail {
+  display: inline-block;
+}
+
+.Menu {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=index.css.map */
