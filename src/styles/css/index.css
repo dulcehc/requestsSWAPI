@@ -1,13 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+body {
+  background: #131010;
+  color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: space-around;
+  grid-column-gap: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .App {
   font-size: 20px;
+  height: 50vh;
+}
+.App__title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.App__title img {
+  height: 150px;
 }
 
 .Detail {
   display: inline-block;
+  border: solid 2px gray;
+  border-radius: 5%;
+  box-shadow: 10px 10px 46px 0px rgba(207, 192, 207, 0.93);
+}
+.Detail__picture {
+  margin: 5px 40px;
+}
+.Detail__picture img {
+  width: 180px;
+  height: 220px;
+}
+.Detail__title {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
 }
 
 .Menu {
   display: inline-block;
+}
+
+.ListItem {
+  border: 1px solid white;
+  border-radius: 0 10% 0 10%;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
