@@ -9,8 +9,8 @@ class App extends Component {
       character: null,
       data: []
     }
-
   }
+
   componentDidMount() {
     // get all characters
     const url = 'https://swapi.co/api/people/';
@@ -35,7 +35,10 @@ class App extends Component {
     console.log('character render-app: ', character);
     return (
       <div className='App'>
-        <div className='App__title'>Star Wars</div>
+        <div className='App__title'>
+          <img src='img/star_wars.png' />
+        </div>
+        <div className='container'>
         { data.length > 0 ?
           <Menu
             data={data}
@@ -44,7 +47,7 @@ class App extends Component {
           : 'loading'
         }
         { character && <Detail character={character} /> }
-
+        </div>
       </div>
     );
   }
