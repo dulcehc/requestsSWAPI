@@ -10,7 +10,8 @@
     "eject": "react-scripts eject",
     "sass": "sass --watch src/styles/scss:src/styles/css",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prettier": "prettier --write src/**/*.js"
   },
   "author": "Dulce Hernández Cruz",
   "license": "MIT",
@@ -21,7 +22,8 @@
     "react-scripts": "^2.0.5"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.14.3"
   },
   "browserslist": [
     ">0.2%",

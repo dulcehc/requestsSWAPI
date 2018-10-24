@@ -1,15 +1,6 @@
-import { LUKE,
-         C3PO,
-         R2D2,
-         VADER,
-         LEIA,
-         OWEN,
-         R5D4,
-         BIGGS,
-         OBIWAN } from './../constants/images';
+import { LUKE, C3PO, R2D2, VADER, LEIA, OWEN, R5D4, BIGGS, OBIWAN } from './../constants/images';
 
 const getImage = name => {
-
   switch (name) {
     case 'Luke Skywalker':
       return LUKE;
@@ -24,7 +15,7 @@ const getImage = name => {
     case 'Owen Lars':
       return OWEN;
     case 'Beru Whitesun lars':
-      return ;
+      return;
     case 'R5-D4':
       return R5D4;
     case 'Biggs Darklighter':
@@ -34,6 +25,6 @@ const getImage = name => {
     default:
       break;
   }
-}
+};
 
 export default getImage;
