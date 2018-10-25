@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ListItem extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class ListItem extends Component {
 
   render() {
     const { character } = this.state;
-    const {onClickedItem} = this.props;
+    const { onClickedItem } = this.props;
     return (
       <div className='ListItem' onClick={onClickedItem}>
         {character}
@@ -19,5 +20,11 @@ class ListItem extends Component {
     );
   }
 }
+
+ListItem.propTypes = {
+  character: PropTypes.string.isRequired,
+  onClickedItem: PropTypes.func,
+};
+
 
 export default ListItem;

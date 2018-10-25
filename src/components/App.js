@@ -30,6 +30,12 @@ class App extends Component {
       character,
     });
   };
+
+  information = character => {
+    return this.state.data.filter(person => person.name === character)[0];
+  }
+
+
   render() {
     const { character, data } = this.state;
     console.log('character render-app: ', character);
@@ -44,7 +50,12 @@ class App extends Component {
           ) : (
             'loading'
           )}
-          {character && <Detail character={character} />}
+          {character &&
+            <Detail
+              character={character}
+              info={this.information(character)}
+            />
+          }
         </div>
       </div>
     );
