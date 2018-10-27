@@ -1,8 +1,7 @@
 {
   "name": "SWAPIReact",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "homepage": "https://dulcehc.github.io/requestsSWAPI",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -14,8 +13,6 @@
     "prettier": "prettier --write src/**/*.js"
   },
   "author": "Dulce Hernández Cruz",
-  "license": "MIT",
-  "homepage": "https://github.com/dulcehc/requestsSWAPI",
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
