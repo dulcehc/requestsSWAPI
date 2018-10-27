@@ -70,10 +70,11 @@ class Detail extends Component {
     return (
       <div className="Detail">
         <h1 className="Detail__title">{character}</h1>
-        <div className="Detail__picture">
-          <img src={getImage(character)} />
-        </div>
+
         <div className="Detail__information">
+          <div className="Detail__picture">
+            <img src={getImage(character)} />
+          </div>
           <Information
             gender={info.gender}
             home={home}

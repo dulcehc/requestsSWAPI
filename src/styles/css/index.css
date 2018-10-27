@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
   background: #131010;
   color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }
 
 .container {
@@ -33,8 +35,17 @@ body {
   border-radius: 5%;
   box-shadow: 10px 10px 46px 0px rgba(207, 192, 207, 0.93);
 }
+.Detail__information {
+  display: grid;
+  grid-template-columns: 27% 60%;
+  justify-content: space-around;
+  grid-column-gap: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .Detail__picture {
-  margin: 5px 40px;
+  display: flex;
+  justify-content: center;
 }
 .Detail__picture img {
   width: 180px;
@@ -43,6 +54,18 @@ body {
 .Detail__title {
   font-family: "Fredoka One", cursive;
   text-align: center;
+  color: #d1ce26;
+}
+
+.Information {
+  display: flex;
+  justify-content: center;
+}
+.Information ul {
+  list-style: none;
+}
+.Information td:first-child {
+  color: #2dd6c0;
 }
 
 .Menu {

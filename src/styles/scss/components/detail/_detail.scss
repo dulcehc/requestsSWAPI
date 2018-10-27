@@ -4,8 +4,19 @@
   border-radius: 5%;
   box-shadow: 10px 10px 46px 0px rgba(207,192,207,0.93);
 
+
+  &__information {
+    display: grid;
+    grid-template-columns: 27% 60%;
+    justify-content: space-around;
+    grid-column-gap: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   &__picture {
-    margin: 5px 40px;
+    display: flex;
+    justify-content: center;
     img {
       width: 180px;
       height: 220px;
@@ -15,6 +26,7 @@
   &__title {
     font-family: $main-font;
     text-align: center;
+    color: #d1ce26;
   }
 }
 

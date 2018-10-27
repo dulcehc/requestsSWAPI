@@ -6,9 +6,11 @@ const renderFilms = (films) => {
       <td key="text-film">Films: </td>
       <td key="data-film">
         <ul>
-          { films.map(film => (
-              <li key={film.id}>{film.title}</li>
-            ))
+          {
+            films.sort((a, b) => a.id > b.id ? 1 : -1)
+            .map((film => (
+              <li key={film.id}>{`Episode ${film.id} - ${film.title}`}</li>
+            )))
           }
         </ul>
       </td>
@@ -27,7 +29,7 @@ const Information = ({gender, home, specie, films}) => {
           </tr>
           <tr key="home">
             <td key="text-home">Home: </td>
-            <td key="data-home">{gender}</td>
+            <td key="data-home">{home}</td>
           </tr>
           <tr key="specie">
             <td key="text-specie">Specie: </td>
