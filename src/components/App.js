@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './menu/Menu';
-import Detail from './Detail';
+import Detail from './detail/Detail';
 
 class App extends Component {
   constructor() {
@@ -33,8 +33,7 @@ class App extends Component {
 
   information = character => {
     return this.state.data.filter(person => person.name === character)[0];
-  }
-
+  };
 
   render() {
     const { character, data } = this.state;
@@ -50,12 +49,7 @@ class App extends Component {
           ) : (
             'loading'
           )}
-          {character &&
-            <Detail
-              character={character}
-              info={this.information(character)}
-            />
-          }
+          {character && <Detail character={character} info={this.information(character)} />}
         </div>
       </div>
     );

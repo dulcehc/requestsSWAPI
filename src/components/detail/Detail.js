@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Information from './Information';
 
-import getImage from '../services/getImage';
+import getImage from '../../services/getImage';
 
 class Detail extends Component {
   constructor(props) {
@@ -61,11 +62,7 @@ class Detail extends Component {
         })
       })
   }
-  renderFilms (films) {
-    return films.map(film => (
-      <h3 key={film.id}>{film.title}</h3>
-    ))
-  }
+
   render() {
     const { character, info } = this.props;
     const { films, home, specie } = this.state;
@@ -77,11 +74,12 @@ class Detail extends Component {
           <img src={getImage(character)} />
         </div>
         <div className="Detail__information">
-          Gender: { info.gender}
-          Home world: { home }
-          Specie: { specie }
-          { films && this.renderFilms(films)}
-
+          <Information
+            gender={info.gender}
+            home={home}
+            specie={specie}
+            films={films}
+          />
         </div>
       </div>
     );
