@@ -1,5 +1,7 @@
 export const BB8 = 'img/bb8.png';
 
+export const BERU = 'img/beru.png';
+
 export const BOBA = 'img/boba-fett.png';
 
 export const BIGGS = 'img/BiggsDarklighter.png';
