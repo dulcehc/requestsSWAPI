@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/dulcehc/requestsSWAPI/precache-manifest.65c240518af45a1ac4b55aba3688faf5.js"
+  "/requestsSWAPI/precache-manifest.3ba83bb875383c63a342ddbe986e3426.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/dulcehc/requestsSWAPI/index.html", {
+workbox.routing.registerNavigationRoute("/requestsSWAPI/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
