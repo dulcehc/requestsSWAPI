@@ -1,4 +1,15 @@
-import { LUKE, C3PO, R2D2, VADER, LEIA, OWEN, R5D4, BIGGS, OBIWAN, BERU } from './../constants/images';
+import {
+  LUKE,
+  C3PO,
+  R2D2,
+  VADER,
+  LEIA,
+  OWEN,
+  R5D4,
+  BIGGS,
+  OBIWAN,
+  BERU,
+} from './../constants/images';
 
 const getImage = name => {
   switch (name) {

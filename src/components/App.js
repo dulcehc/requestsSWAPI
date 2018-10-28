@@ -25,7 +25,6 @@ class App extends Component {
   }
 
   handleSelectionCharacter = character => {
-    console.log('character:', character);
     this.setState({
       character,
     });
@@ -37,7 +36,6 @@ class App extends Component {
 
   render() {
     const { character, data } = this.state;
-    console.log('character render-app: ', character);
     return (
       <div className="App">
         <div className="App__title">

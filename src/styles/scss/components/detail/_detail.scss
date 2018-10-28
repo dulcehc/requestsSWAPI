@@ -12,6 +12,12 @@
     grid-column-gap: 3%;
     margin-left: 5%;
     margin-right: 5%;
+
+    @media (max-width: 425px) {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row-gap: 3%;
+    }
   }
 
   &__picture {
@@ -21,6 +27,7 @@
       width: 180px;
       height: 220px;
     }
+
   }
 
   &__title {

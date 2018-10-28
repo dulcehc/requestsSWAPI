@@ -12,4 +12,11 @@ body {
   grid-column-gap: 50px;
   margin-left: 10%;
   margin-right: 10%;
+
+  @media (max-width: 425px) {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 3%;
+    font-size: 15px;
+  }
 }
